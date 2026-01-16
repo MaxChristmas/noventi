@@ -1,13 +1,388 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>noventi</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Noventi — Automatisation & simplification pour PME</title>
+  <meta name="description" content="Noventi aide les PME à gagner du temps en supprimant les tâches manuelles répétitives grâce à des automatisations simples et fiables." />
+  <link rel="stylesheet" href="style.css">
+  <script src="/src/main.js" defer></script>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="#top">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            <strong>Noventi</strong><div class="small muted">Automatisation & simplification</div>
+          </div>
+        </a>
+        <div class="menu" aria-label="Navigation">
+          <a href="#pourquoi">Pourquoi</a>
+          <a href="#offre">Offre</a>
+          <a href="#methode">Méthode</a>
+          <a href="#tarifs">Tarifs</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a class="btn primary" href="#contact">Demander un diagnostic</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+    <header class="hero">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+
+            <h1>Automatisations simples<br/>pour des PME qui veulent souffler.</h1>
+            <p class="sub">
+              J’aide les dirigeants et équipes à <strong>gagner du temps</strong> en supprimant les tâches répétitives
+              (Excel, ressaisie, relances, reporting, suivi clients…), avec des systèmes <strong>clairs, fiables</strong> et adaptés à votre quotidien.
+            </p>
+            <div class="cta">
+              <a class="btn primary" href="#contact">📅 Planifier un échange de 30 min</a>
+              <a class="btn" href="#offre">Voir comment je travaille</a>
+              <div class="mini">Sans engagement • On identifie 1–2 leviers concrets</div>
+            </div>
+          </div>
+
+          <div class="card hero-card">
+            <div class="padded">
+              <div class="muted small">Ce que vous obtenez</div>
+              <h3 style="margin:6px 0 0;">Un système qui tourne sans vous</h3>
+              <ul class="clean">
+                <li><span class="check"></span><span><strong>Moins d’erreurs</strong> (moins de ressaisie, moins d’oublis)</span></li>
+                <li><span class="check"></span><span><strong>Moins de charge mentale</strong> (process clairs et suivis)</span></li>
+                <li><span class="check"></span><span><strong>Plus de vitesse</strong> (info disponible, actions automatisées)</span></li>
+              </ul>
+
+              <div class="kpi">
+                <div class="item">
+                  <div class="big">+2h / semaine</div>
+                  <div class="lab">gagnées dès le 1er chantier (souvent plus)</div>
+                </div>
+                <div class="item">
+                  <div class="big">30 min</div>
+                  <div class="lab">pour voir si c’est pertinent chez vous</div>
+                </div>
+              </div>
+
+              <div class="pill">🔧 Outils possibles : Airtable / Baserow / Notion / n8n / Make / API / sur-mesure</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="pourquoi">
+      <div class="wrap">
+        <div class="section-title">
+          <div>
+            <h2>Pourquoi les PME ont besoin d’automatisation</h2>
+            <p class="lead">Parce que le temps perdu est invisible… jusqu’à ce qu’il coûte cher.</p>
+          </div>
+        </div>
+
+        <div class="grid3">
+          <div class="card padded">
+            <div class="icon" aria-hidden="true">⏱️</div>
+            <h3>Temps gaspillé</h3>
+            <p class="muted">Ressaisies, copier-coller, relances, suivi sur Excel… 10 minutes ici, 15 minutes là, toute l’année.</p>
+          </div>
+          <div class="card padded">
+            <div class="icon" aria-hidden="true">🧠</div>
+            <h3>Charge mentale</h3>
+            <p class="muted">Le dirigeant valide tout, vérifie tout, corrige tout. Ça bloque la croissance et ça épuise.</p>
+          </div>
+          <div class="card padded">
+            <div class="icon" aria-hidden="true">⚠️</div>
+            <h3>Erreurs & oublis</h3>
+            <p class="muted">Quand tout dépend de l’humain, les oublis arrivent. Un process fiable = moins de stress.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:14px" class="quote">
+          <strong>Objectif :</strong> transformer un empilement d’outils (mails, fichiers, WhatsApp, logiciels…) en un <strong>système cohérent</strong> où l’info circule et les tâches se déclenchent automatiquement.
+        </div>
+      </div>
+    </section>
+
+    <section id="offre">
+      <div class="wrap">
+        <div class="section-title">
+          <div>
+            <h2>Ce que je propose</h2>
+            <p class="lead">Du concret, rapidement. Pas un “projet IT” sans fin.</p>
+          </div>
+        </div>
+
+        <div class="grid3">
+          <div class="card padded">
+            <h3>1) Diagnostic & priorisation</h3>
+            <p class="muted">On identifie les 1–3 tâches qui font perdre le plus de temps (et pourquoi), puis on choisit le levier le plus rentable.</p>
+            <ul class="clean">
+              <li><span class="check"></span><span>Cartographie rapide des process</span></li>
+              <li><span class="check"></span><span>Estimation du gain (temps / risques)</span></li>
+              <li><span class="check"></span><span>Plan d’action simple</span></li>
+            </ul>
+          </div>
+
+          <div class="card padded">
+            <h3>2) Mise en place</h3>
+            <p class="muted">Je construis et j’implémente l’automatisation : collecte, traitement, notifications, synchronisation, tableaux de bord.</p>
+            <ul class="clean">
+              <li><span class="check"></span><span>Automatisation (n8n/Make)</span></li>
+              <li><span class="check"></span><span>Base de données légère (Airtable/Baserow)</span></li>
+              <li><span class="check"></span><span>Intégrations API / sur-mesure</span></li>
+            </ul>
+          </div>
+
+          <div class="card padded">
+            <h3>3) Formation & suivi</h3>
+            <p class="muted">On rend l’équipe autonome et on sécurise la solution. Ajustements possibles selon l’usage réel.</p>
+            <ul class="clean">
+              <li><span class="check"></span><span>Formation courte (prise en main)</span></li>
+              <li><span class="check"></span><span>Documentation simple</span></li>
+              <li><span class="check"></span><span>Maintenance optionnelle</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid2" style="margin-top:14px">
+          <div class="card padded">
+            <h3>Exemples de chantiers</h3>
+            <ul class="clean">
+              <li><span class="check"></span><span>Suivi des demandes clients + relances automatiques</span></li>
+              <li><span class="check"></span><span>Centralisation des leads (formulaire → base → notifications)</span></li>
+              <li><span class="check"></span><span>Synchronisation Excel / Google Sheets → base de données</span></li>
+              <li><span class="check"></span><span>Reporting hebdo automatisé (mail/Slack/WhatsApp)</span></li>
+              <li><span class="check"></span><span>Gestion des tâches récurrentes et rappels d’équipe</span></li>
+            </ul>
+          </div>
+          <div class="card padded">
+            <h3>Ce que vous évitez</h3>
+            <ul class="clean">
+              <li><span class="check"></span><span>Un outil “trop gros” pour votre réalité</span></li>
+              <li><span class="check"></span><span>Des mois de déploiement</span></li>
+              <li><span class="check"></span><span>Une solution incompréhensible par l’équipe</span></li>
+              <li><span class="check"></span><span>Des automatisations fragiles non maintenues</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="methode">
+      <div class="wrap">
+        <div class="section-title">
+          <div>
+            <h2>Ma méthode</h2>
+            <p class="lead">Rapide, pragmatique, orientée impact.</p>
+          </div>
+        </div>
+
+        <div class="steps">
+          <div class="card padded">
+            <div class="stepnum">ÉTAPE 01</div>
+            <h3>Comprendre</h3>
+            <p class="muted">30–60 min pour capter vos process et repérer les irritants quotidiens.</p>
+          </div>
+          <div class="card padded">
+            <div class="stepnum">ÉTAPE 02</div>
+            <h3>Prioriser</h3>
+            <p class="muted">On choisit le “80/20” : le chantier qui soulage le plus, sans complexité.</p>
+          </div>
+          <div class="card padded">
+            <div class="stepnum">ÉTAPE 03</div>
+            <h3>Mettre en place</h3>
+            <p class="muted">Je déploie une solution robuste, documentée, testée avec vos cas réels.</p>
+          </div>
+          <div class="card padded">
+            <div class="stepnum">ÉTAPE 04</div>
+            <h3>Transmettre</h3>
+            <p class="muted">Formation courte + ajustements. Objectif : autonomie et sérénité.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:14px" class="quote">
+          <strong>Promesse :</strong> on vise un résultat concret rapidement. Si ce n’est pas utile chez vous, on ne force pas.
+        </div>
+      </div>
+    </section>
+
+    <section id="tarifs">
+      <div class="wrap">
+        <div class="section-title">
+          <div>
+            <h2>Ordres de grandeur</h2>
+            <p class="lead">Un cadre clair, puis un devis précis après diagnostic.</p>
+          </div>
+        </div>
+
+        <div class="price">
+          <div class="card padded plan">
+            <h3>Automatisation ciblée</h3>
+            <div class="tag">Un process simple, fort impact</div>
+            <div class="amount">500–1 000€ <span>HT</span></div>
+            <ul class="clean">
+              <li><span class="check"></span><span>1 flux automatisé</span></li>
+              <li><span class="check"></span><span>Tests + sécurisation</span></li>
+              <li><span class="check"></span><span>Mini-doc + prise en main</span></li>
+            </ul>
+          </div>
+
+          <div class="card padded plan">
+            <h3>Organisation + automatisations</h3>
+            <div class="tag">Structuration + plusieurs flux</div>
+            <div class="amount">1 500–3 000€ <span>HT</span></div>
+            <ul class="clean">
+              <li><span class="check"></span><span>Base + vues + règles</span></li>
+              <li><span class="check"></span><span>2–5 automatisations</span></li>
+              <li><span class="check"></span><span>Formation + doc</span></li>
+            </ul>
+          </div>
+
+          <div class="card padded plan">
+            <h3>Sur-mesure / intégrations</h3>
+            <div class="tag">API, outils métiers, dev</div>
+            <div class="amount">Sur devis</div>
+            <ul class="clean">
+              <li><span class="check"></span><span>Connecteurs spécifiques</span></li>
+              <li><span class="check"></span><span>Fiabilité & monitoring</span></li>
+              <li><span class="check"></span><span>Maintenance optionnelle</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="muted small" style="margin-top:10px;">
+          *Ces montants sont indicatifs. Le prix final dépend du périmètre, des outils existants et du niveau de fiabilité attendu.
+        </p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <div class="section-title">
+          <div>
+            <h2>FAQ</h2>
+            <p class="lead">Réponses rapides aux questions fréquentes.</p>
+          </div>
+        </div>
+
+        <details>
+          <summary>On a déjà un logiciel, ça sert à quoi ?</summary>
+          <p class="muted">
+            Souvent le problème n’est pas le logiciel, mais le fait que rien ne communique : ressaisie, doublons, infos dispersées.
+            J’interconnecte vos outils pour supprimer le manuel.
+          </p>
+        </details>
+
+        <details>
+          <summary>Est-ce que c’est compliqué pour l’équipe ?</summary>
+          <p class="muted">
+            Non : je vise la simplicité. Une fois en place, l’usage doit être évident. Il y a toujours une prise en main + doc courte.
+          </p>
+        </details>
+
+        <details>
+          <summary>Et si ça casse ?</summary>
+          <p class="muted">
+            Les automatisations sont testées et sécurisées. Selon le besoin, on peut ajouter monitoring/alertes et une maintenance légère.
+          </p>
+        </details>
+
+        <details>
+          <summary>Combien de temps pour voir un résultat ?</summary>
+          <p class="muted">
+            Sur un chantier ciblé, le gain est souvent visible très vite. L’objectif est d’obtenir un “premier win” rapidement.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-title">
+          <div>
+            <h2>Parlons-en</h2>
+            <p class="lead">En 30 minutes, on voit si vous avez un levier simple à activer.</p>
+          </div>
+        </div>
+
+        <div class="form">
+          <div class="card padded">
+            <form id="leadForm">
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px">
+                <div>
+                  <label for="name">Nom</label>
+                  <input id="name" name="name" placeholder="Votre nom" required />
+                </div>
+                <div>
+                  <label for="company">Entreprise</label>
+                  <input id="company" name="company" placeholder="Nom de l'entreprise" />
+                </div>
+              </div>
+
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px">
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="vous@entreprise.fr" required />
+                </div>
+                <div>
+                  <label for="phone">Téléphone</label>
+                  <input id="phone" name="phone" placeholder="06…" />
+                </div>
+              </div>
+
+              <div style="margin-top:12px">
+                <label for="msg">Votre situation (2–3 lignes)</label>
+                <textarea id="msg" name="msg" placeholder="Ex : ressaisie sur Excel, relances clients, suivi commandes…"></textarea>
+              </div>
+
+              <div class="cta" style="margin-top:12px">
+                <button class="btn primary" type="submit">📨 Envoyer ma demande</button>
+                <a class="btn" href="#top">Revenir en haut</a>
+              </div>
+
+              <p class="muted small" style="margin:10px 0 0">
+                En cliquant, un email se prépare automatiquement. Tu peux aussi me contacter directement (coordonnées à droite).
+              </p>
+            </form>
+          </div>
+
+          <div class="card padded">
+            <h3 style="margin-top:0">Contact direct</h3>
+            <p class="muted">
+              Pratique si vous préférez : un message court suffit.
+            </p>
+            <ul class="clean">
+              <li><span class="check"></span><span><strong>Noventi</strong> — Automatisation & simplification</span></li>
+              <li><span class="check"></span><span>Email : <a href="mailto:contact@noventi.fr">contact@noventi.fr</a> (à remplacer)</span></li>
+              <li><span class="check"></span><span>Tél : <a href="tel:+33600000000">+33 6 00 00 00 00</a> (à remplacer)</span></li>
+            </ul>
+
+            <div class="pill">✅ Réponse sous 24–48h ouvrées</div>
+
+            <div style="margin-top:14px" class="quote">
+              <strong>Astuce :</strong> décrivez juste la tâche qui vous prend le plus de temps. Je vous dirai tout de suite si c’est automatisable.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        <div class="row">
+          <div>© <span id="year"></span> Noventi — Tous droits réservés</div>
+          <div class="small">SIRET / Mentions légales / Politique de confidentialité (à ajouter)</div>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
 </html>
