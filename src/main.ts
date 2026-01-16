@@ -1,3 +1,7 @@
+declare class FinisherHeader {
+  constructor(options: any);
+}
+
 // Année auto
 // document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -39,3 +43,40 @@ const random = Math.floor(Math.random() * 4);
 if (sloganTitle) { 
     sloganTitle.innerHTML = slogans[random]
 }
+
+new FinisherHeader({
+  "count": 16,
+  "size": {
+    "min": 1300,
+    "max": 1500,
+    "pulse": 0
+  },
+  "speed": {
+    "x": {
+      "min": 2,
+      "max": 6
+    },
+    "y": {
+      "min": 0.6,
+      "max": 3
+    }
+  },
+  "colors": {
+    "background": "#6ee7ff",
+    "particles": [
+      "#ffaa77",
+      "#326477",
+      "#2421a4",
+      "#824d5d"
+    ]
+  },
+  "blending": "none",
+  "opacity": {
+    "center": 0.5,
+    "edge": 0
+  },
+  "skew": 0,
+  "shapes": [
+    "c"
+  ]
+});

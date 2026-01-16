@@ -6,46 +6,45 @@
   <title>Noventi — Automatisation & simplification pour PME</title>
   <meta name="description" content="Noventi aide les PME à gagner du temps en supprimant les tâches manuelles répétitives grâce à des automatisations simples et fiables." />
   <link rel="stylesheet" href="src/style.css">
-  <script type="module" src="/src/main.js" ></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <script src="src/lib/finisher-header.es5.min.js" type="text/javascript" defer></script>
+  <script src="https://kit.fontawesome.com/ee0ea2def7.js" crossorigin="anonymous"></script>
+  <script type="module" src="/src/main.js" ></script>
   <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
     ({key: "AIzaSyDyVSEn_Atj3GSXKKNx1oD05FvbzZ3g5FI", v: "weekly"});</script>
 </head>
 <body>
-
-  <div class="topbar">
-    <div class="wrap">
-      <div class="nav">
-        <a class="brand" href="#top">
-          <div class="logo" aria-hidden="true"></div>
-          <div>
-            <strong>Noventi</strong><div class="small muted">Automatisation & simplification</div>
+  <div class="finisher-header">
+    <div class="topbar">
+      <div class="wrap">
+        <div class="nav">
+          <a class="brand" href="#top">
+            <div class="logo" aria-hidden="true"></div>
+            <div>
+              <strong>Noventi</strong><div class="small muted">Simplifiez votre quotidien.</div>
+            </div>
+          </a>
+          <div class="menu" aria-label="Navigation">
+            <a href="#pourquoi">Pourquoi</a>
+            <a href="#offre">Offre</a>
+            <a href="#methode">Méthode</a>
+            <a href="#tarifs">Tarifs</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
           </div>
-        </a>
-        <div class="menu" aria-label="Navigation">
-          <a href="#pourquoi">Pourquoi</a>
-          <a href="#offre">Offre</a>
-          <a href="#methode">Méthode</a>
-          <a href="#tarifs">Tarifs</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Contact</a>
+          <a class="btn primary" href="#contact">Discutons de votre besoin</a>
         </div>
-        <a class="btn primary" href="#contact">Discutons de votre besoin</a>
       </div>
     </div>
-  </div>
-
-  <main id="top">
     <header class="hero">
       <div class="wrap">
         <div class="hero-grid">
           <div>          
             <h1 id="slogan" class="manrope-medium">Automatisations simples<br/>pour des PME qui veulent souffler.</h1>
             <p class="sub">
-              J’aide les dirigeants et équipes à <strong>gagner du temps</strong> en supprimant les tâches répétitives
-              (Excel, ressaisie, relances, reporting, suivi clients…), avec des systèmes <strong>clairs, fiables</strong> et adaptés à votre quotidien.
+              Nous aidons les dirigeants et leurs équipes à <strong>gagner du temps</strong> en transformant des tâches encore gérées à la main en systèmes <strong>simples, fiables et adaptés</strong> à leur quotidien et à leur budget.
             </p>
             <div class="cta">
               <a class="btn primary" href="#offre">Voir comment nous travaillons</a>
@@ -53,9 +52,9 @@
           </div>
 
           <div class="card hero-card">
-            <div class="padded">
+            <img src="/noventi.gif" class="noventi-animation">
+            <!-- <div class="padded">
               <div class="muted small">Ce que vous obtenez</div>
-              <h3 style="margin:6px 0 0;">Un système qui tourne sans vous</h3>
               <ul class="clean">
                 <li><span class="check"></span><span><strong>Moins d’erreurs</strong> (moins de ressaisie, moins d’oublis)</span></li>
                 <li><span class="check"></span><span><strong>Moins de charge mentale</strong> (process clairs et suivis)</span></li>
@@ -64,20 +63,17 @@
 
               <div class="kpi">
                 <div class="item">
-                  <div class="big">+2h / semaine</div>
-                  <div class="lab">gagnées dès le 1er chantier (souvent plus)</div>
-                </div>
-                <div class="item">
-                  <div class="big">30 min</div>
-                  <div class="lab">pour voir si c’est pertinent chez vous</div>
+                  <div class="big">+ 23 jours économisés</div>
+                  <div class="lab">en moyenne par an et par PME soit 3.5h par semaine.</div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
     </header>
-
+  </div>
+  <main id="top">
     <section id="pourquoi">
       <div class="wrap">
         <div class="section-title">
@@ -89,17 +85,17 @@
 
         <div class="grid3">
           <div class="card padded">
-            <div class="icon" aria-hidden="true">⏱️</div>
+            <i class="fa-regular fa-hand"></i>
             <h3>Trop de manuel</h3>
             <p class="muted">Ressaisies, copier-coller, relances, suivi sur Excel… 10 minutes ici, 15 minutes là, toute l’année.</p>
           </div>
           <div class="card padded">
-            <div class="icon" aria-hidden="true">🧠</div>
+            <i class="fa-regular fa-cloud"></i>
             <h3>Charge mentale</h3>
             <p class="muted">Le dirigeant valide tout, vérifie tout, corrige tout. Ça bloque la croissance et ça épuise.</p>
           </div>
           <div class="card padded">
-            <div class="icon" aria-hidden="true">⚠️</div>
+            <i class="fa-solid fa-gear"></i>
             <h3>Erreurs & oublis</h3>
             <p class="muted">Quand tout dépend de l’humain, les oublis arrivent. Un process fiable = moins de stress.</p>
           </div>
@@ -310,7 +306,7 @@
         </div>
 
         <div class="form">
-          <div class="card padded">
+          <div class="padded">
             <form id="leadForm">
               <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px">
                 <div>
@@ -350,7 +346,7 @@
             </form>
           </div>
 
-          <div class="card padded">
+          <div class="padded">
             <h3 style="margin-top:0">Contact direct</h3>
             <p class="muted">
               Pratique si vous préférez : un message court suffit.
