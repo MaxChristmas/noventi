@@ -1,24 +1,41 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+// Année auto
+// document.getElementById('year').textContent = new Date().getFullYear();
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+// // Form -> mailto (simple, sans backend)
+// const form = document.getElementById('leadForm');
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     const name = encodeURIComponent(document.getElementById('name').value.trim());
+//     const company = encodeURIComponent(document.getElementById('company').value.trim());
+//     const email = encodeURIComponent(document.getElementById('email').value.trim());
+//     const phone = encodeURIComponent(document.getElementById('phone').value.trim());
+//     const msg = encodeURIComponent(document.getElementById('msg').value.trim());
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+//     const subject = encodeURIComponent(`Demande - Automatisation (${decodeURIComponent(company) || "Entreprise"})`);
+//     const body =
+//     `Bonjour Maxence,%0D%0A%0D%0A` +
+//     `Je vous contacte via le site Noventi.%0D%0A%0D%0A` +
+//     `Nom: ${decodeURIComponent(name)}%0D%0A` +
+//     `Entreprise: ${decodeURIComponent(company)}%0D%0A` +
+//     `Email: ${decodeURIComponent(email)}%0D%0A` +
+//     `Téléphone: ${decodeURIComponent(phone)}%0D%0A%0D%0A` +
+//     `Contexte:%0D%0A${decodeURIComponent(msg)}%0D%0A%0D%0A` +
+//     `Merci,%0D%0A${decodeURIComponent(name)}`;
+
+//     // ⚠️ Remplace l'email ci-dessous
+//     window.location.href = `mailto:contact@noventi.fr?subject=${subject}&body=${body}`;
+// });
+
+const slogans = [
+    "Automatisations simples<br/>pour des PME qui veulent souffler.",
+    "Automatisez l’opérationnel.<br/> Concentrez-vous sur l’essentiel.",
+    "Simplifier ce qui complique votre quotidien.",
+    "Libérez votre entreprise des tâches inutiles.",
+    "Nous remplaçons le manuel par <br/> des systèmes qui tournent seuls."
+]
+
+const sloganTitle = document.getElementById('slogan')
+const random = Math.floor(Math.random() * 4);
+if (sloganTitle) { 
+    sloganTitle.innerHTML = slogans[random]
+}

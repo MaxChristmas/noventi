@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Noventi — Automatisation & simplification pour PME</title>
   <meta name="description" content="Noventi aide les PME à gagner du temps en supprimant les tâches manuelles répétitives grâce à des automatisations simples et fiables." />
-  <link rel="stylesheet" href="style.css">
-  <script src="/src/main.js" defer></script>
+  <link rel="stylesheet" href="src/style.css">
+  <script type="module" src="/src/main.js" ></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+    ({key: "AIzaSyDyVSEn_Atj3GSXKKNx1oD05FvbzZ3g5FI", v: "weekly"});</script>
 </head>
 <body>
 
@@ -27,7 +32,7 @@
           <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
         </div>
-        <a class="btn primary" href="#contact">Demander un diagnostic</a>
+        <a class="btn primary" href="#contact">Discutons de votre besoin</a>
       </div>
     </div>
   </div>
@@ -36,17 +41,14 @@
     <header class="hero">
       <div class="wrap">
         <div class="hero-grid">
-          <div>
-
-            <h1>Automatisations simples<br/>pour des PME qui veulent souffler.</h1>
+          <div>          
+            <h1 id="slogan" class="manrope-medium">Automatisations simples<br/>pour des PME qui veulent souffler.</h1>
             <p class="sub">
               J’aide les dirigeants et équipes à <strong>gagner du temps</strong> en supprimant les tâches répétitives
               (Excel, ressaisie, relances, reporting, suivi clients…), avec des systèmes <strong>clairs, fiables</strong> et adaptés à votre quotidien.
             </p>
             <div class="cta">
-              <a class="btn primary" href="#contact">📅 Planifier un échange de 30 min</a>
-              <a class="btn" href="#offre">Voir comment je travaille</a>
-              <div class="mini">Sans engagement • On identifie 1–2 leviers concrets</div>
+              <a class="btn primary" href="#offre">Voir comment nous travaillons</a>
             </div>
           </div>
 
@@ -70,8 +72,6 @@
                   <div class="lab">pour voir si c’est pertinent chez vous</div>
                 </div>
               </div>
-
-              <div class="pill">🔧 Outils possibles : Airtable / Baserow / Notion / n8n / Make / API / sur-mesure</div>
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@
       <div class="wrap">
         <div class="section-title">
           <div>
-            <h2>Pourquoi les PME ont besoin d’automatisation</h2>
+            <h2>Pourquoi les PME perdent du temps sans s’en rendre compte ?</h2>
             <p class="lead">Parce que le temps perdu est invisible… jusqu’à ce qu’il coûte cher.</p>
           </div>
         </div>
@@ -90,7 +90,7 @@
         <div class="grid3">
           <div class="card padded">
             <div class="icon" aria-hidden="true">⏱️</div>
-            <h3>Temps gaspillé</h3>
+            <h3>Trop de manuel</h3>
             <p class="muted">Ressaisies, copier-coller, relances, suivi sur Excel… 10 minutes ici, 15 minutes là, toute l’année.</p>
           </div>
           <div class="card padded">
@@ -115,7 +115,7 @@
       <div class="wrap">
         <div class="section-title">
           <div>
-            <h2>Ce que je propose</h2>
+            <h2>Ce que nous proposons</h2>
             <p class="lead">Du concret, rapidement. Pas un “projet IT” sans fin.</p>
           </div>
         </div>
@@ -206,10 +206,6 @@
             <h3>Transmettre</h3>
             <p class="muted">Formation courte + ajustements. Objectif : autonomie et sérénité.</p>
           </div>
-        </div>
-
-        <div style="margin-top:14px" class="quote">
-          <strong>Promesse :</strong> on vise un résultat concret rapidement. Si ce n’est pas utile chez vous, on ne force pas.
         </div>
       </div>
     </section>
@@ -360,16 +356,23 @@
               Pratique si vous préférez : un message court suffit.
             </p>
             <ul class="clean">
-              <li><span class="check"></span><span><strong>Noventi</strong> — Automatisation & simplification</span></li>
-              <li><span class="check"></span><span>Email : <a href="mailto:contact@noventi.fr">contact@noventi.fr</a> (à remplacer)</span></li>
-              <li><span class="check"></span><span>Tél : <a href="tel:+33600000000">+33 6 00 00 00 00</a> (à remplacer)</span></li>
+              <li><span class="check"></span><span><strong>SARL Noventi</strong></span></li>
+              <li><span class="check"></span><span>Email : <a href="mailto:contact@noventi.fr">contact@noventi.fr</a></span></li>
+              <li><span class="check"></span><span>Tél : 07 82 37 82 42</span></li>
+              <li><span class="check"></span><span>6A ZA La Corne du Cerf 56190 Arzal </span></li>
             </ul>
 
-            <div class="pill">✅ Réponse sous 24–48h ouvrées</div>
+            <div class="pill">Réponse sous 24–48h ouvrées</div>
 
             <div style="margin-top:14px" class="quote">
-              <strong>Astuce :</strong> décrivez juste la tâche qui vous prend le plus de temps. Je vous dirai tout de suite si c’est automatisable.
+              <strong>Horaires :</strong> Du lundi au vendredi de 9h à 18h
             </div>
+
+            <h3 style="margin: top 10px;">Ou nous trouver ?</h3>
+
+            <gmp-map center="47.573484,-2.348844" zoom="4" map-id="8f348f3c1a2b9e44">
+            </gmp-map>
+
           </div>
         </div>
       </div>
@@ -379,7 +382,7 @@
       <div class="wrap">
         <div class="row">
           <div>© <span id="year"></span> Noventi — Tous droits réservés</div>
-          <div class="small">SIRET / Mentions légales / Politique de confidentialité (à ajouter)</div>
+          <div class="small">SIRET : 93141971700018</div>
         </div>
       </div>
     </footer>
